@@ -6,7 +6,6 @@ import org.bukkit.Material
 import org.bukkit.NamespacedKey
 import org.bukkit.block.Container
 import org.bukkit.enchantments.Enchantment
-import org.bukkit.entity.Item
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockDispenseEvent
@@ -43,15 +42,3 @@ private fun getEnchantmentBook(enchant: Enchantment, level: Int): ItemStack {
     return book
 }
 
-class Events : Listener {
-    @EventHandler
-    fun onDispenserFire(event: BlockDispenseEvent) {
-        val now = event.item
-        if (now.enchantments[Enchantment.ARROW_INFINITE] != 8) return
-        val next = now.clone()
-        val inventory = (event.block.getState(false) as Container).inventory
-        inventory.addItem(now.asOne())
-        next.removeEnchantment(Enchantment.ARROW_INFINITE)
-        event.item = next
-    }
-}

@@ -1,0 +1,25 @@
+lists:
+  infinite:
+    - TNT
+    # All types of carpet
+    - WHITE_CARPET
+    - ORANGE_CARPET
+    - MAGENTA_CARPET
+    - LIGHT_BLUE_CARPET
+    - YELLOW_CARPET
+    - LIME_CARPET
+    - PINK_CARPET
+    - GRAY_CARPET
+    - LIGHT_GRAY_CARPET
+    - CYAN_CARPET
+    - PURPLE_CARPET
+    - BLUE_CARPET
+    - BROWN_CARPET
+    - GREEN_CARPET
+    - RED_CARPET
+    - BLACK_CARPET
+    # All types of rail
+    - RAIL
+    - POWERED_RAIL
+    - DETECTOR_RAIL
+    - ACTIVATOR_RAIL
